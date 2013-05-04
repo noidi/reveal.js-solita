@@ -152,6 +152,14 @@ body {
 .reveal h3 {
   color: #848282;
   font-size: 54pt; }
+.reveal .slides > section.first {
+  text-align: center;
+  padding: 0px; }
 .reveal .slides > section {
   height: 100%;
-  padding: 0px; }
+  padding: 110px 25px 0px 25px;
+  font-size: 72pt;
+  text-align: left; }
+  .reveal .slides > section h2 {
+    font-size: 72pt;
+    padding-bottom: 75px; }

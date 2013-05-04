@@ -77,8 +77,20 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
         font-size: 54pt;
     }
 
+    .slides>section.first {
+        text-align: center;
+        padding: 0px;
+    }
+
     .slides>section {
         height: 100%;
-        padding: 0px;
+        padding: 110px 25px 0px 25px;
+        font-size: 72pt;
+        text-align: left;
+
+        h2 {
+            font-size: 72pt;
+            padding-bottom: 75px;
+        }
     }
 }
