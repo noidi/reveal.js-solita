@@ -36,16 +36,23 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 
 .reveal .author-box {
+    display: table;
     background-color: $solitaCyan;
     color: white;
     text-align: center;
     width: 400px;
+    height: 262px;
     margin-left: 280px;
     font-size: 16pt;
-}
 
-.reveal .author-box a {
-    color: white !important;
+    a {
+        color: white !important;
+    }
+
+    .author {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
 // Theme template ------------------------------
