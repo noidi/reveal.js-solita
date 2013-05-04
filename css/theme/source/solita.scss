@@ -20,6 +20,7 @@
 $solitaDarkGrey: #595959;
 $solitaLightGrey: #848282;
 $solitaCyan: #28b7af;
+$solitaPink: #ef268e;
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Georgia', serif;
@@ -29,7 +30,7 @@ $headingColor: $solitaCyan;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
-$linkColor: #00008B;
+$linkColor: $solitaPink;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
