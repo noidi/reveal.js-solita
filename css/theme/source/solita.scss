@@ -34,6 +34,10 @@ $linkColor: $solitaPink;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
 
 .reveal .author-box {
     display: table;
@@ -42,7 +46,9 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     text-align: center;
     width: 400px;
     height: 262px;
-    margin-left: 280px;
+    position: relative;
+    left: 280px;
+    top: -282px;
     font-size: 16pt;
 
     a {
@@ -54,12 +60,6 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
         vertical-align: middle;
     }
 }
-
-// Theme template ------------------------------
-@import "../template/theme";
-// ---------------------------------------------
-
-// Override theme stuff
 
 .reveal h3 {
     color: $solitaLightGrey;
