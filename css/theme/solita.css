@@ -8,15 +8,19 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 .reveal .author-box {
+  display: table;
   background-color: #28b7af;
   color: white;
   text-align: center;
   width: 400px;
+  height: 262px;
   margin-left: 280px;
   font-size: 16pt; }
-
-.reveal .author-box a {
-  color: white !important; }
+  .reveal .author-box a {
+    color: white !important; }
+  .reveal .author-box .author {
+    display: table-cell;
+    vertical-align: middle; }
 
 /*********************************************
  * GLOBAL STYLES
