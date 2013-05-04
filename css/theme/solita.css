@@ -136,17 +136,23 @@ body {
   background-color: #28b7af;
   color: white;
   text-align: center;
-  width: 400px;
-  height: 262px;
+  width: 500px;
+  height: 312px;
   position: relative;
-  left: 280px;
-  top: -282px;
-  font-size: 16pt; }
+  left: 230px;
+  top: -255px;
+  font-size: 20pt; }
   .reveal .author-box a {
     color: white !important; }
   .reveal .author-box .author {
     display: table-cell;
     vertical-align: middle; }
 
+.reveal h1 {
+  position: relative;
+  top: 60px; }
+
 .reveal h3 {
-  color: #848282; }
+  color: #848282;
+  position: relative;
+  top: 120px; }
