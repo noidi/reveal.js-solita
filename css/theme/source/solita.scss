@@ -44,12 +44,12 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     background-color: $solitaCyan;
     color: white;
     text-align: center;
-    width: 400px;
-    height: 262px;
+    width: 500px;
+    height: 312px;
     position: relative;
-    left: 280px;
-    top: -282px;
-    font-size: 16pt;
+    left: 230px;
+    top: -255px;
+    font-size: 20pt;
 
     a {
         color: white !important;
@@ -61,6 +61,13 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     }
 }
 
+.reveal h1 {
+    position: relative;
+    top: 60px;
+}
+
 .reveal h3 {
     color: $solitaLightGrey;
+    position: relative;
+    top: 120px;
 }
