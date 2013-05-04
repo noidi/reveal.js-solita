@@ -132,27 +132,26 @@ body {
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
 .reveal .author-box {
-  display: table;
+  width: 453px;
+  height: 298px;
+  position: relative;
+  left: 733.5px;
   background-color: #28b7af;
   color: white;
-  text-align: center;
-  width: 500px;
-  height: 312px;
-  position: relative;
-  left: 230px;
-  top: -255px;
-  font-size: 20pt; }
+  font-size: 20pt;
+  display: table; }
   .reveal .author-box a {
     color: white !important; }
   .reveal .author-box .author {
     display: table-cell;
     vertical-align: middle; }
-
 .reveal h1 {
-  position: relative;
-  top: 60px; }
-
+  font-size: 72pt;
+  padding-top: 420px;
+  padding-bottom: 100px; }
 .reveal h3 {
   color: #848282;
-  position: relative;
-  top: 120px; }
+  font-size: 54pt; }
+.reveal .slides > section {
+  height: 100%;
+  padding: 0px; }

@@ -22,6 +22,9 @@ $solitaLightGrey: #848282;
 $solitaCyan: #28b7af;
 $solitaPink: #ef268e;
 
+$slideWidth: 1920px;
+$slideHeight: 1200px;
+
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Georgia', serif;
 $mainColor: $solitaDarkGrey;
@@ -38,36 +41,44 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal {
+    .author-box {
+        $width: 453px;
 
-.reveal .author-box {
-    display: table;
-    background-color: $solitaCyan;
-    color: white;
-    text-align: center;
-    width: 500px;
-    height: 312px;
-    position: relative;
-    left: 230px;
-    top: -255px;
-    font-size: 20pt;
+        width: $width;
+        height: 298px;
+        position: relative;
+        left: ($slideWidth / 2) - ($width / 2);
 
-    a {
-        color: white !important;
+        background-color: $solitaCyan;
+        color: white;
+        font-size: 20pt;
+
+        display: table;
+
+        a {
+            color: white !important;
+        }
+
+        .author {
+            display: table-cell;
+            vertical-align: middle;
+        }
     }
 
-    .author {
-        display: table-cell;
-        vertical-align: middle;
+    h1 {
+        font-size: 72pt;
+        padding-top: 420px;
+        padding-bottom: 100px;
     }
-}
 
-.reveal h1 {
-    position: relative;
-    top: 60px;
-}
+    h3 {
+        color: $solitaLightGrey;
+        font-size: 54pt;
+    }
 
-.reveal h3 {
-    color: $solitaLightGrey;
-    position: relative;
-    top: 120px;
+    .slides>section {
+        height: 100%;
+        padding: 0px;
+    }
 }
