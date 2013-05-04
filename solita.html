@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Pääotsikko – Alaotsikko</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -38,11 +38,13 @@
 			<div class="slides">
 
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+                                  <h1>Pääotsikko</h1>
+                                  <h3>Alaotsikko</h3>
+                                  <div class="author-box">
+                                    <p>ERKKI ESIMERKKI</p>
+                                    <p>+358 12 345 6789</p>
+                                    <p><a href="mailto:erkki.esimerkki@solita.fi">erkki.esimerkki@solita.fi</a></p>
+                                  </div>
 				</section>
 
 				<section>
@@ -356,6 +358,7 @@ function linkify( selector ) {
 				progress: true,
 				history: true,
 				center: true,
+                                rollingLinks: false,
 
 				theme: Reveal.getQueryHash().theme || 'solita', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
