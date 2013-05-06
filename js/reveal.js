@@ -748,7 +748,10 @@ var Reveal = (function(){
 	function getPreviousVerticalIndex( stack ) {
 
 		if( typeof stack === 'object' && typeof stack.setAttribute === 'function' && stack.classList.contains( 'stack' ) ) {
-			return parseInt( stack.getAttribute( 'data-previous-indexv' ) || 0, 10 );
+			// Prefer manually defined start-indexv
+			var attributeName = stack.hasAttribute( 'data-start-indexv' ) ? 'data-start-indexv' : 'data-previous-indexv';
+
+			return parseInt( stack.getAttribute( attributeName ) || 0, 10 );
 		}
 
 		return 0;
@@ -1629,10 +1632,18 @@ var Reveal = (function(){
 			var fragments = sortFragments( currentSlide.querySelectorAll( '.fragment:not(.visible)' ) );
 
 			if( fragments.length ) {
-				fragments[0].classList.add( 'visible' );
+				// Find the index of the next fragment
+				var index = fragments[0].getAttribute( 'data-fragment-index' );
 
-				// Notify subscribers of the change
-				dispatchEvent( 'fragmentshown', { fragment: fragments[0] } );
+				// Find all fragments with the same index
+				fragments = currentSlide.querySelectorAll( '.fragment[data-fragment-index="'+ index +'"]' );
+
+				toArray( fragments ).forEach( function( element ) {
+					element.classList.add( 'visible' );
+
+					// Notify subscribers of the change
+					dispatchEvent( 'fragmentshown', { fragment: element } );
+				} );
 
 				updateControls();
 				return true;
@@ -1655,10 +1666,18 @@ var Reveal = (function(){
 			var fragments = sortFragments( currentSlide.querySelectorAll( '.fragment.visible' ) );
 
 			if( fragments.length ) {
-				fragments[ fragments.length - 1 ].classList.remove( 'visible' );
+				// Find the index of the previous fragment
+				var index = fragments[ fragments.length - 1 ].getAttribute( 'data-fragment-index' );
 
-				// Notify subscribers of the change
-				dispatchEvent( 'fragmenthidden', { fragment: fragments[ fragments.length - 1 ] } );
+				// Find all fragments with the same index
+				fragments = currentSlide.querySelectorAll( '.fragment[data-fragment-index="'+ index +'"]' );
+
+				toArray( fragments ).forEach( function( f ) {
+					f.classList.remove( 'visible' );
+
+					// Notify subscribers of the change
+					dispatchEvent( 'fragmenthidden', { fragment: f } );
+				} );
 
 				updateControls();
 				return true;
