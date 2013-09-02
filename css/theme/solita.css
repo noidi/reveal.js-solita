@@ -160,6 +160,8 @@ body {
   padding: 110px 25px 0px 25px;
   font-size: 72pt;
   text-align: left; }
-  .reveal .slides > section h2 {
-    font-size: 72pt;
-    padding-bottom: 75px; }
+.reveal .slides > section h2 {
+  font-size: 72pt;
+  padding-bottom: 75px; }
+.reveal pre code {
+  max-height: 1000px; }
