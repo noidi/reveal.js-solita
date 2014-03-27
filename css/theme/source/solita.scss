@@ -82,6 +82,10 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
         padding: 0px;
     }
 
+    .slides>section:not(.first)>* {
+        margin: 90px;
+    }
+
     .slides>section {
         height: 100%;
         padding: 110px 25px 0px 25px;
