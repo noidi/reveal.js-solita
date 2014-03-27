@@ -152,7 +152,7 @@ body {
     display: table-cell;
     vertical-align: middle; }
 .reveal h1 {
-  font-size: 72pt;
+  font-size: 64pt;
   padding-top: 420px;
   padding-bottom: 100px; }
 .reveal h3 {
@@ -166,8 +166,8 @@ body {
 .reveal .slides > section {
   height: 100%;
   padding: 110px 25px 0px 25px;
-  font-size: 72pt;
+  font-size: 64pt;
   text-align: left; }
   .reveal .slides > section h2 {
-    font-size: 72pt;
+    font-size: 64pt;
     padding-bottom: 75px; }
